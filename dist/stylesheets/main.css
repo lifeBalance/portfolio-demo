@@ -1,0 +1,75 @@
+#who-dis {
+  background: url(http://lorempixel.com/1440/900/technics) 50% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 100px 0;
+}
+#after-portfolio {
+  background: url(http://lorempixel.com/1440/900/nature) 50% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 200px 0;
+}
+
+.branding {
+  border-top: solid red 5px;
+  background-color: black;
+  color: white;
+  min-height: 20em;
+  padding: 3em;
+}
+
+.portfolio {
+  border-top: solid red 5px;
+  border-bottom: solid red 5px;
+  background-color: black;
+  color: white;
+  min-height: 20em;
+  padding: 3em;
+}
+
+i {
+  color: white;
+}
+.who-dis {
+  background-color: black;
+  color: white;
+}
+.who-dis h2 {
+ color: red;
+}
+footer {
+  padding: 2em 0 2em 0;
+  border-bottom: solid red 5px;
+  background-color: black;
+  color: red;
+}
+footer {
+  color: red;
+}
+label {
+  color: white;
+}
+.copyright {
+  color: white;
+}
+.fa-twitter-square {
+  color: #28A9E0;
+  font-size: 6em;
+}
+.fa-github-square {
+  color: white;
+    font-size: 6em;
+}.fa-facebook-square {
+  color: #3C5899;
+    font-size: 6em;
+}.fa-skype {
+  color: #00AFF0;
+  font-size: 6em;
+}
