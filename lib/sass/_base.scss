@@ -1,0 +1,59 @@
+// Colors
+$dark-bg: #1B1B1B;
+$light-dark-text: #B9B9B9;
+$pistaccio: #A7E22E;
+$pink: #FA2772;
+$lilac: #9358FE;
+$vanilla: #E7DB75;
+$blue: #66D9EE;
+
+h1 {
+  font-family: 'Inconsolata';
+  color: white;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+h3 {
+  font-family: 'VT323';
+  color: $pink;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.6em;
+  border-bottom: 1px solid $light-dark-text;
+}
+
+p {
+  color: $light-dark-text;
+}
+
+i {
+  color: $pistaccio;
+}
+
+li {
+  padding-left: 1em;
+  color: $light-dark-text;
+}
+label {
+  color: white;
+}
+address {
+  padding-left: 1em;
+  color: $light-dark-text;
+}
+form {
+  padding: 0 1em 0 1em;
+}
+footer {
+  background-color: $dark-bg;
+  padding: 2em 0 2em 0;
+  border-bottom: solid $pink 5px;
+  border-top: solid #99CC00 5px;
+  color: red;
+}
+footer h3 {
+  // padding-bottom: 0.3em;
+}

@@ -2,11 +2,15 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
 var jade        = require('gulp-jade');
-var plumber = require('gulp-plumber');
-// var watch       = require('gulp-watch'); // Snappy watch.
+var sass        = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var scssLint    = require('gulp-scss-lint');
+var plumber     = require('gulp-plumber');
+var notify      = require("gulp-notify");
+// var watch       = require('gulp-watch'); // Snappy watch?
 
 // Jade templates will compile at the beginning
-gulp.task('default', ['serve']);
+gulp.task('default', ['serve', 'sass-compile', 'jade-compile']);
 
 // Static server
 gulp.task('serve', function() {
@@ -17,6 +21,8 @@ gulp.task('serve', function() {
   });
   // Watching the jade files. When changes, reloading after compiling.
   gulp.watch("./lib/templates/**/*.jade", ['jade-compile', reload]);
+  // Watching the sass files. When changes, we don't reload, just compile.
+  gulp.watch("./lib/sass/**/*.scss", ['sass-compile']);
 });
 
 // Compile jade files
@@ -29,4 +35,37 @@ gulp.task('jade-compile', function() {
       pretty: true
     }))
     .pipe(gulp.dest('./dist/'));
+});
+
+function errorAlert(error){
+  notify.onError({  title: "SCSS Error",
+                    message: "Check your terminal: <%= error.message %>",
+                    sound: "Sosumi"})(error); //Error Notification
+  gutil.log(error.toString());
+  this.emit("end"); // End function
+}
+
+// Compile only main.scss into CSS
+gulp.task('sass-compile', function() {
+  return gulp.src("lib/sass/main.scss")
+    .pipe(plumber({ errorHandler: errorAlert }))
+    .pipe(scssLint({
+      'config': 'sass-lint-config.yml'
+    }))
+    .pipe(sass())
+    .pipe(autoprefixer({
+      browsers: [ '> 1%',
+                  'last 2 versions',
+                  'firefox >= 4',
+                  'safari 7',
+                  'safari 8',
+                  'IE 8',
+                  'IE 9',
+                  'IE 10',
+                  'IE 11'],
+      cascade: false
+    }))
+    .pipe(gulp.dest("dist/stylesheets"))
+    .pipe(notify("CSS written!"))
+    .pipe(browserSync.stream()); // Push into the stream, without reloading.
 });

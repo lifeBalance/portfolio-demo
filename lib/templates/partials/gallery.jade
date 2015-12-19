@@ -1,11 +1,10 @@
-section(id="portfolio" data-speed="4" data-type="background")
+section.gallery
   .container
-    h3.text-center #[i.fa.fa-eye] check some of our work:
     .row
       each val in ['slate', 'flatly', 'darkly', 'cosmo', 'superhero', 'cerulean']
         div.col-sm-6.col-md-4
           .thumbnail
             img(src="images/#{val}.png" alt="#{val}")
             .caption
-              p.lead.pull-right #{val}.com
+              h4.pull-right #{val}.com
               p:a(href="#" class="btn btn-primary" role="button") Live!

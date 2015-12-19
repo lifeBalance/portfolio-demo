@@ -1,0 +1,59 @@
+#branding {
+  background: url("../images/code.jpg") 50% 0 fixed;
+  border-top: solid #BD2400 5px;
+  padding: 8em 0;
+}
+
+#about {
+  background-color: #1b1b1b;
+  border-top: solid $blue 5px;
+  border-bottom: solid $pistaccio 5px;
+  padding: 2em 0;
+  font-family: 'Inconsolata';
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+#about h3 {
+  font-size: 2.2em;
+  text-shadow: 2px 2px 4px #421D1D;
+}
+
+#portfolio {
+  background: url("../images/things2.jpeg") right bottom fixed;
+  background-color: #1b1b1b;
+  padding: 3em;
+}
+
+#portfolio h3 {
+  font-size: 2.2em;
+  text-shadow: 2px 2px 4px #421D1D;
+}
+.social, .address {
+  padding-left: 1.1em;
+}
+
+.thumbnail {
+  background-color: rgba(0, 0, 0, 0.28);;
+}
+
+.fa-hand-spock-o {
+  color: $vanilla;
+}
+
+.fa-twitter-square {
+  font-size: 4em;
+  color: #28A9E0;
+}
+.fa-github-square {
+  font-size: 4em;
+  color: white;
+}
+.fa-facebook-square {
+  font-size: 4em;
+  color: #3C5899;
+}
+.fa-skype {
+  font-size: 4em;
+  color: #00AFF0;
+}

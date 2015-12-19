@@ -19,7 +19,19 @@ $(document).ready(function(){
       $scroll.css({ backgroundPosition: coords });
     }); // end window scroll
   });  // end section function
-}); // close out script
+
+  /*********************
+  * Blinking effect
+  *********************/
+  function blinker() {
+    $('#blink').fadeOut(500);
+    $('#blink').fadeIn(500);
+  }
+
+  setInterval(blinker, 1000);
+
+}); // End script
+
 
 /*(function initialize() {
     var mapCanvas = document.getElementById('map');

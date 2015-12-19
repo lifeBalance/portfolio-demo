@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
-    <title>Bootstrap 101 Template</title>
+    <title>no tags</title>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
@@ -15,58 +15,137 @@
     <![endif]-->
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Devicons-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:500|VT323|Inconsolata:400" rel="stylesheet" type="text/css">
+    <!-- Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css">
     <!-- Custom-->
     <link href="/stylesheets/main.css" rel="stylesheet">
   </head>
   <body>
-    <section>
+    <section id="branding" data-speed="4" data-type="background">
       <div class="branding">
         <div class="container">
-          <h1 class="text-center">&lt; <code>no tags</code> &gt;</h1>
-          <p class="lead text-center">Web Development Studio</p>
+          <h1 class="text-center animated rubberBand">&lt;&sol;<code>no tags</code>&gt;</h1>
+          <h2 class="lead text-center animated bounceInLeft">Web Development Studio</h2>
         </div>
       </div>
     </section>
-    <section id="who-dis" data-speed="4" data-type="background">
+    <section id="about" data-speed="4" data-type="background">
       <div class="container">
-        <h2><i class="fa fa-hand-spock-o"></i> who dis?</h2>
-        <p> </p>&lt; <code>no tags</code> &gt; is a web development studio based on 
-        <input placeholder="your city here">
-        <p>We specialized on:</p>
-        <ul>
-          <li>JavaScript</li>
-          <li>Ruby on Rails</li>
-          <li>Test/Behaviour Driven Development.</li>
-        </ul>
+        <h3 class="text-center"><i class="fa fa-hand-spock-o"></i> who dis?<span id="blink">_</span></h3>
+        <div class="row">
+          <div class="col-md-4">
+            <p><i class="fa fa-hand-rock-o"></i> We are &lt;/<code>no tags</code>&gt; , a web development studio based in Moscow (Russia), and we are fluent in several languages:</p>
+            <ul class="list-unstyled">
+              <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+              <li><i class="devicon-ruby-plain colored"></i> Ruby</li>
+              <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+              <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+              <li><i class="devicon-sass-original colored"></i> Sass</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fa fa-hand-paper-o"></i> All of our code is handcrafted following TDD and BDD best practices. Some of the technologies used at the studio:</p>
+            <ul class="list-unstyled">
+              <li><i class="devicon-rails-plain-wordmark colored"></i> Ruby on Rails</li>
+              <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+              <li><i class="devicon-react-original colored"></i> React.js</li>
+              <li><i class="devicon-meteor-plain colored"></i> Meteor.js</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fa fa-hand-scissors-o"></i> When delivering a Web Application, maximize cross-browser compatibility is one of our main goals:</p>
+            <ul class="list-unstyled">
+              <li><i class="devicon-chrome-plain colored"></i> Google Chrome</li>
+              <li><i class="devicon-firefox-plain colored"></i> Mozilla Firefox</li>
+              <li><i class="devicon-apple-plain"></i> Safari</li>
+              <li><i class="devicon-ie10-original colored"></i> Internet Explorer</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" data-speed="4" data-type="background">
       <div class="container">
-        <h2>Check this out:</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </section>
-    <section id="after-portfolio" data-speed="4" data-type="background">
-      <div class="container">
-        <h2>After portfolio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3 class="text-center"><i class="fa fa-eye"></i> check some of our work:</h3>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail"><img src="images/slate.png" alt="slate">
+              <div class="caption">
+                <p class="lead pull-right">slate.com</p>
+                <p:a href="#" role="button" class="btn btn-primary">Live!</p:a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail"><img src="images/flatly.png" alt="flatly">
+              <div class="caption">
+                <p class="lead pull-right">flatly.com</p>
+                <p:a href="#" role="button" class="btn btn-primary">Live!</p:a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail"><img src="images/darkly.png" alt="darkly">
+              <div class="caption">
+                <p class="lead pull-right">darkly.com</p>
+                <p:a href="#" role="button" class="btn btn-primary">Live!</p:a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail"><img src="images/cosmo.png" alt="cosmo">
+              <div class="caption">
+                <p class="lead pull-right">cosmo.com</p>
+                <p:a href="#" role="button" class="btn btn-primary">Live!</p:a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail"><img src="images/superhero.png" alt="superhero">
+              <div class="caption">
+                <p class="lead pull-right">superhero.com</p>
+                <p:a href="#" role="button" class="btn btn-primary">Live!</p:a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail"><img src="images/cerulean.png" alt="cerulean">
+              <div class="caption">
+                <p class="lead pull-right">cerulean.com</p>
+                <p:a href="#" role="button" class="btn btn-primary">Live!</p:a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <!-- Social and Address-->
+          <div class="col-md-2">
             <h3><i class="fa fa-beer"></i> Being social</h3>
-            <div class="row">
+            <div class="row social">
               <div class="col-md-4"><i class="fa fa-twitter-square"></i></div>
               <div class="col-md-4"><i class="fa fa-github-square"></i></div>
             </div>
-            <div class="row">
+            <div class="row social">
               <div class="col-md-4"><i class="fa fa-facebook-square"></i></div>
               <div class="col-md-4"><i class="fa fa-skype"></i></div>
             </div>
+            <div class="row address">
+              <h3><i class="fa fa-home"></i> Our address:</h3>
+              <address><strong>&lt;&sol;no tags&gt;, Inc.</strong><br>1355 Market Street, Suite 900<br>San Francisco, CA 94103<br><abbr title="Phone"></abbr><span class="glyphicon glyphicon-phone-alt"></span>  (123) 456-7890</address>
+            </div>
+          </div>
+          <!-- Map-->
+          <div class="col-md-6">
+            <h3><i class="fa fa-map-marker"></i> Come visit us!</h3>
+            <div id="map"><img src="images/map.png" class="img-responsive"></div>
           </div>
           <div class="col-md-4">
             <h3><i class="fa fa-comment"></i> Hit me up</h3>
@@ -89,13 +168,9 @@
               </div>
             </form>
           </div>
-          <div class="col-md-4 col-md-offset-1">
-            <h3><i class="fa fa-map-marker"></i> Come to visit!</h3>
-            <div id="map"></div>
-          </div>
         </div>
         <div class="copyright">
-          <p class="text-center">&copy; 2016</p>
+          <p class="text-center"><b>&lt;&sol;no tags&gt;</b>  &copy; 2015-2016</p>
         </div>
       </div>
     </footer>
