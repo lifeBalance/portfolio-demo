@@ -7,6 +7,10 @@ $lilac: #9358FE;
 $vanilla: #E7DB75;
 $blue: #66D9EE;
 
+nav.navbar {
+  border-radius: 0;
+}
+
 h1 {
   font-family: 'Inconsolata';
   color: white;
@@ -53,7 +57,4 @@ footer {
   border-bottom: solid $pink 5px;
   border-top: solid #99CC00 5px;
   color: red;
-}
-footer h3 {
-  // padding-bottom: 0.3em;
 }

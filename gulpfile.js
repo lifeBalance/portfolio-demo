@@ -7,6 +7,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var scssLint    = require('gulp-scss-lint');
 var plumber     = require('gulp-plumber');
 var notify      = require("gulp-notify");
+var gutil       = require('gulp-util');
+var clean       = require('gulp-clean');
 // var watch       = require('gulp-watch'); // Snappy watch?
 
 // Jade templates will compile at the beginning
@@ -44,6 +46,11 @@ function errorAlert(error){
   gutil.log(error.toString());
   this.emit("end"); // End function
 }
+
+// gulp.task('clean-css', function () {
+//   return gulp.src('dist/stylesheets/main.css')
+//     .pipe(clean());
+// });
 
 // Compile only main.scss into CSS
 gulp.task('sass-compile', function() {
