@@ -29,7 +29,9 @@ footer
       // Map
       .col-md-6
         h3 #[i.fa.fa-map-marker] Come visit us!
-        #map: img.img-responsive(src='images/map.png')
+        //- #map: img.img-responsive(src='images/map.png')
+        div(class="embed-responsive embed-responsive-16by9")
+          iframe(class="embed-responsive-item" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=metro%20sokol&zoom=10&key=AIzaSyCkhpsSmWQL832RP0GSTTmX2k8IZA6-eDg" allowfullscreen)
 
       .col-md-4
         h3 #[i.fa.fa-comment] Hit me up
